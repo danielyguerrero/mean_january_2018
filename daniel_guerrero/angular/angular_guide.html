@@ -1,0 +1,49 @@
+Installing the Angular CLI
+> npm install -g @angular/cli
+-----------------------------------------------------------
+
+Creating an Angular App
+> ng new myFirstAngularApp
+-----------------------------------------------------------
+
+Generating Components, Directives, Services and Pipes
+
+* navigate into your new angular application folder *
+
+cd myFirstAngularApp
+> ng generate component my-component - Creates a component
+> ng generate service my-service - Creates a service
+> ng generate class my-class - Creates a class
+-----------------------------------------------------------
+
+npm install -D @angular-devkit/core
+
+-----------------------------------------------------------
+Launching the App
+
+ng serve   //   (locahost: 4200)
+-----------------------------------------------------------
+
+Including Popular Modules in our App
+
+* ../src/app/app.modules.ts With Imports *
+
+ 
+import { NgModule } from '@angular/core'; 
+import { BrowserModule } from '@angular/platform-browser'; 
+import { AppComponent } from './app.component'; 
+import { FormsModule } from '@angular/forms'; // <-- Import FormsModule
+import { HttpModule } from '@angular/http'; // <-- Import HttpModule
+@NgModule({ 
+	declarations: [ 
+		AppComponent
+	], 
+	imports: [
+		BrowserModule,
+		FormsModule, // <-- Include module in our AppModules
+		HttpModule // <-- Include module in our AppModules
+	], 
+	providers: [], 
+	bootstrap: [AppComponent] 
+}) 
+export class AppModule { }

@@ -1,0 +1,30 @@
+npm init -y
+
+
+
+
+"keywords": [],
+"author": "",
+"license": "ISC",
+"dependencies": {
+  "body-parser": "^1.18.2",
+  "express": "^4.16.2",
+  "express-session": "^1.15.6"
+}
+
+
+
+
+
+
+npm install
+
+=========================================
+
+nodemon server.js        // run server
+
+npm install ejs
+
+npm install body-parser
+
+npm install express-session

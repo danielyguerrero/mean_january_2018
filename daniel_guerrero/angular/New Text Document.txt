@@ -1,0 +1,22 @@
+ng new <appname>
+
+ng serve    //start server
+
+ng new 
+
+
+
+
+
+Generating Components, Directives, Services and Pipes
+
+The following commands allow us to create different parts of an Angular application.
+
+    * navigate into your new angular application folder *
+    cd myFirstAngularApp
+    ng generate component my-component - Creates a component
+    ng generate service my-service - Creates a service
+    ng generate class my-class - Creates a class
+
+
+
